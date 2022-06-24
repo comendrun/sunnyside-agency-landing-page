@@ -47,18 +47,26 @@
     <title>Frontend Mentor | SunnySide Startup</title>
   </head>
   <body>
-    <div class="overlay"></div>
+    <div id="overlay" class="overlay hidden"></div>
     <header class="top-picture-container">
       <nav class="nav">
         <h2 class="company-name top-logo logo">sunnyside</h2>
 
-        <ul class="nav-items-container bubble bubble-top-right  desktop">
-          <li><a href="#" class="nav-links">About</a></li>
-          <li><a href="#" class="nav-links">Services</a></li>
-          <li><a href="#" class="nav-links">Projects</a></li>
-          <li><a href="#" class="nav-links contact">CONTACT</a></li>
+        <ul
+          id="navbar"
+          class="nav-items-container bubble bubble-top-right desktop"
+        >
+          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="#services" class="nav-links">Services</a></li>
+          <li><a href="#projects" class="nav-links">Projects</a></li>
+          <li><a href="#contact" class="nav-links contact">CONTACT</a></li>
         </ul>
-        <img class="hamburger" src="./Assets/images/icon-hamburger.svg" alt="" />
+        <img
+          class="hamburger"
+          src="./Assets/images/icon-hamburger.svg"
+          alt=""
+          id="hamburger"
+        />
         <!--end of nav-items-container div ==> -->
       </nav>
       <div class="header--text">
@@ -70,7 +78,7 @@
       </div>
     </header>
     <main class="container">
-      <div class="body-container-grid">
+      <div class="body-container-grid" id="services">
         <div class="each-grid-cell first-cell">
           <div class="egg-photo-container"></div>
           <div class="text-box">
@@ -80,7 +88,7 @@
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
-            <a class="fraunces" href="#">LEARN MORE</a>
+            <a class="learn-more learn-yellow fraunces" href="#">LEARN MORE</a>
           </div>
           <!-- end of each-grid-cell div -->
         </div>
@@ -93,7 +101,7 @@
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
-            <a class="fraunces" href="#">LEARN MORE</a>
+            <a class="learn-more learn-red fraunces" href="#">LEARN MORE</a>
           </div>
           <!-- end of each-grid-cell div -->
         </div>
@@ -123,7 +131,7 @@
         </div>
       </div>
 
-      <div class="client-testimonials-container">
+      <div class="client-testimonials-container" id="about">
         <h2 class="fraunces">CLIENT TESTIMONIALS</h2>
         <div class="testimonials-container">
           <div class="each-testimony-container">
@@ -170,7 +178,7 @@
         <!-- end of client-testimonials-container div==> -->
       </div>
 
-      <div class="photo-list-container">
+      <div class="photo-list-container" id="projects">
         <div class="photo-list-each-photo bottles"></div>
         <div class="photo-list-each-photo orange"></div>
         <div class="photo-list-each-photo cone"></div>
@@ -181,14 +189,16 @@
       <h2 class="company-name fraunces logo">sunnyside</h2>
 
       <ul class="footer-items-container">
-        <li><a href="#" class="footer-links">About</a></li>
-        <li><a href="#" class="footer-links">Services</a></li>
-        <li><a href="#" class="footer-links">Projects</a></li>
+        <li><a href="#about" class="footer-links">About</a></li>
+        <li><a href="#services" class="footer-links">Services</a></li>
+        <li><a href="#projects" class="footer-links">Projects</a></li>
       </ul>
 
-      <ul class="social-media-logos-container">
+      <ul class="social-media-logos-container" id="contact">
         <li>
-          <a href="https://www.facebook.com/profile.php?id=100075303231964" class="social-links fb"
+          <a
+            href="https://www.facebook.com/profile.php?id=100075303231964"
+            class="social-links fb"
             ><i class="fa-brands fa-facebook"></i
           ></a>
         </li>
@@ -203,9 +213,12 @@
           ></a>
         </li>
 
-        <li >
-          <a href="https://www.linkedin.com/in/comendrun/" class="social-links linkedin"
-            ><i class="fa-brands fa-linkedin-in"></i></a>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/comendrun/"
+            class="social-links linkedin"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </li>
       </ul>
       <div class="attribution">
@@ -217,7 +230,6 @@
         <a href="https://github.com/comendrun"> Kamran Rouhani</a>.
       </div>
     </footer>
-
-
+    <script src="./JS/app.js"></script>
   </body>
 </html>
