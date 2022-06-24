@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Preview](./Assets/design/desktop-preview.jpg)
-![Mobile Preview](./Assets/design/mobile-design.jpg)
+<!-- ![Mobile Preview](./Assets/design/mobile-design.jpg) -->
 
 ### Links
 
