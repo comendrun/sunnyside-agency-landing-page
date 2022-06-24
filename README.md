@@ -28,6 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Preview](./Assets/design/desktop-preview.jpg)
+
 <!-- ![Mobile Preview](./Assets/design/mobile-design.jpg) -->
 
 ### Links
@@ -47,9 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-For this Challenge, we could have several options to achieve what we want. first of all i wanted to try this one with css backgound-image way. in this method, i defined every div that we could have in our page and by assigning a background image with css on them, i controlled changing pictures from mobile state to desktop state. i think i could also assign a picture directly to divs and then hide mobile or desktop images in opposite cases with css or even js. but i preffered this method and despite the complexity it added to the project, i liked the experience.
-but if i had to start over this project, i wouldn do it with this approach, because withoud any content the div's where hard to assign a non-specific height or width and it added a little to the time i finished the project.
-over all i liked the experience and i hope i can do much better works in the future.
+For this challenge, we could have several options to achieve what we want. first of all i wanted to try this one with CSS background-image way. in this method, i defined every div that we could have in our page and by assigning a background image with CSS on them, i controlled changing pictures from mobile state to desktop state. I think i could also assign a picture directly to divs and then hide mobile or desktop images in opposite cases with CSS or even js. but i preferred this method and despite the complexity, it added to the project, i liked the experience. But if i had to start over this project, I will not do it with this approach, because with no content the divs were hard to assign a non-specific height or width and it added a little to the time i finished the project. overall i liked the experience and I hope I can do much better work in the future.
 
 <!-- To see how you can add code snippets, see below:
 
@@ -75,7 +74,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-I do feel that it could be done much faster and easier with ReactJS. but i decided to go with vanilla JS and i didnt regret the experience. maybe next time...
+I do feel that it could be done much faster and easier with ReactJS. but I decided to go with vanilla JS and I didn't regret the experience. Maybe next time...
 
 ### Useful resources
 
