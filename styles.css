@@ -19,7 +19,7 @@
   --Primary-Soft-Red: rgb(254, 120, 103);
   --Primary-Soft-Red-low-opacity: rgb(254, 120, 103, 0.5);
   --Primary-Yellow: rgb(250, 212, 0);
-  --Primary-Yellow-low-opacity: rgba(250, 212, 0, 0.5);
+  --Primary-Yellow-low-opacity: rgba(250, 212, 0, 0.6);
   --Primary-Dark-cyan-graphic-design-text: hsl(167, 40%, 24%);
   --Primary-Dark-Blue-photography-text: hsl(198, 62%, 26%);
   --Primary-Moderate-cyan-footer: hsl(167, 44%, 70%);
@@ -135,17 +135,18 @@ header {
 .bubble {
   margin: auto;
   background-color: white;
-  width: 90%;
+  width: 85%;
   position: absolute;
   top: 100px;
   right: 0;
   left: 0;
-  height: 60%;
+  min-height: 300px;
   justify-content: space-around;
   padding: 2rem 3rem;
   z-index: 100;
-  transform: translateY(-200%);
+  transform: translateY(-500%);
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: all 0.3s ease-in;
 }
 /* .buble.active {
   transform: translateX(110%);
@@ -163,29 +164,45 @@ header {
   right: 0px;
   top: -24px;
 }
+
+.bubble.bubble-scrolled {
+  /* border: 1px solid white; */
+  background-color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px white;
+  transition: all 0.3s ease-in;
+}
+.bubble.bubble-scrolled::before {
+  transition: all 0.3s ease-in;
+  border-right: 24px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 12px solid rgba(255, 255, 255, 0.9);
+  z-index: 0;
+}
 /* nav style */
 .overlay {
-  display: block;
+  display: inline;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
   min-width: 100vw;
   min-height: 100vh;
-  z-index: 1;
+  z-index: 0;
 }
 .nav {
   display: flex;
-
   justify-content: flex-end;
+  /* display: flex; */
+  align-items: center;
+  padding: 1rem 2rem;
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* background-color: rgb(62, 191, 255); */
+  /* margin-top: -2rem; */
+  z-index: 100;
 }
 .top-logo {
   margin-right: auto;
-}
-
-nav {
-  display: flex;
-
-  align-items: center;
-  padding: 1rem 2rem;
 }
 
 nav h2 {
@@ -566,7 +583,7 @@ i:hover {
   .nav {
     display: flex;
     justify-content: flex-end;
-    margin: 2rem 1rem;
+    /* margin: 2rem 1rem; */
   }
 
   .top-logo {
@@ -647,4 +664,14 @@ i:hover {
   .photo-list-each-photo {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.nav {
+  transition: background-color 0.3s ease-in;
+}
+
+.navbar-scrolled {
+  background-color: hsl(200, 100%, 62%) !important;
+  transition: background-color 0.3s ease-in;
+  border-radius: 10px;
 }
