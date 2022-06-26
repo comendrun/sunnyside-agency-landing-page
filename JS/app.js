@@ -26,15 +26,13 @@ window.addEventListener("resize", () => {
     // navbar.classList.add("hidden");
     overlay.classList.add("hidden");
     navbar.classList.remove("bubble");
-    navbar.classList.remove("active")
+    navbar.classList.remove("active");
   } else if (windowWidth < 800) {
-
     navbar.classList.add("bubble");
     // overlay.classList.toggle("hidden");
     // navContainer.classList.add("navbar-active");
   }
 });
-
 
 window.onscroll = function () {
   "use strict";
@@ -42,7 +40,6 @@ window.onscroll = function () {
     document.body.scrollTop >= 750 ||
     document.documentElement.scrollTop >= 750
   ) {
-
     navContainer.classList.add("navbar-scrolled");
     navbar.classList.add("bubble-scrolled");
   } else {
@@ -50,4 +47,3 @@ window.onscroll = function () {
     navbar.classList.remove("bubble-scrolled");
   }
 };
-
